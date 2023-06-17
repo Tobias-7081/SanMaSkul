@@ -1,0 +1,123 @@
+*{
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+}
+
+.body-div{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    padding: 1.5vw;
+    background-color: rgb(29, 32, 43);
+    margin: 0;
+}
+
+.header--h1{
+    color: rgb(189, 189, 189);
+}
+
+.main-div{
+    display: flex;
+    height: 60vh;
+    margin: 0;
+    background-color: cadetblue;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.principal-h1{
+    font-family: 'UnifrakturMaguntia', cursive;
+}
+
+.grid-container{
+    display: flex;
+    flex-grow: 1;
+    height: auto;
+    padding: 5vh;
+    background-color: #051c42;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.grid-container h1{
+    color: aliceblue;
+}
+
+.grid-container__images{
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+.card{
+    border-radius: 10px;
+    min-width: 20vw;
+	min-height: 20vw;
+    height: calc(33.33% - 30px);
+    width: calc(33.33% - 30px);
+    overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+    justify-self: center;
+    align-self: center;
+}
+
+footer{
+    background-color: rgb(10, 28, 44);
+}
+
+@media screen and (max-width: 850px){
+    .central-img{
+        min-width: 20vh;
+        min-height: 20vh;
+        height: calc(50% - 30px);
+        width: calc(50% - 30px);
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .main-div{
+        flex-direction: column;
+        height: 60%;
+        padding: 10%;
+    }
+    .central-img{
+        min-width: 20vh;
+        min-height: 20vh;
+        height: calc(50% - 30px);
+        width: calc(50% - 30px);
+    }
+    
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-container h1{
+        color: aliceblue;
+    }
+
+    .grid-container__images{
+        display: flex;
+	    flex-direction: column;
+    }
+
+    .card{
+        border-radius: 10px;
+        min-width: 20vw;
+        min-height: 20vw;
+        height: 13rem;
+        width: 13rem;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+}
